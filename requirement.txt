@@ -1,0 +1,10 @@
+
+## 🛠️ Tools & Technologies
+
+* Python
+* Jupyter Notebook
+* Pandas
+* NumPy
+* Scikit-learn
+* XGBoost
+* Matplotlib / Seaborn 
