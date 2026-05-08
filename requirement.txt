@@ -1,10 +1,6 @@
-
-## 🛠️ Tools & Technologies
-
-* Python
-* Jupyter Notebook
-* Pandas
-* NumPy
-* Scikit-learn
-* XGBoost
-* Matplotlib / Seaborn 
+fastapi
+uvicorn
+pandas
+scikit-learn
+xgboost
+joblib
