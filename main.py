@@ -32,19 +32,19 @@ def home():
 @app.post("/predict")
 def predict(data: InputData):
 
-    # Convert input into pandas DataFrame (IMPORTANT for XGBoost)
     df = pd.DataFrame([{
         "store": data.store,
         "holiday_flag": data.holiday_flag,
         "temperature": data.temperature,
         "fuel_price": data.fuel_price,
         "cpi": data.cpi,
-        "unemployment": data.unemployment
+        "unemployment": data.unemployment,
+        "weekly_sales_log": data.weekly_sales_log,
+        "fuel_price_log": data.fuel_price_log
     }])
 
-    # Make prediction
     prediction = model.predict(df)
 
     return {
         "prediction": prediction.tolist()
-    }
+}
